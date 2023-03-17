@@ -3,8 +3,6 @@ package helpers
 import com.example.models.ShortlistDetailed
 import org.http4k.core.Response
 import org.http4k.core.Status
-import org.http4k.core.Status.Companion.BAD_REQUEST
-import org.http4k.core.Status.Companion.OK
 import java.sql.ResultSet
 
 fun fetchShortlistHelper(submissionId: String): Any {

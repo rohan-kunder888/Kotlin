@@ -4,7 +4,8 @@ import java.sql.Connection
 import java.sql.DriverManager
 
 fun getDirectConnection(): Connection {
-        val jdbcUrl = "jdbc:postgresql://[DbString]"
-        val connection = DriverManager.getConnection(jdbcUrl, "user_name", "password")
+        val jdbcUrl = "jdbc:postgresql://YOUR-DB-CONNECTION-STRING"
+//        val jdbcUrl = "jdbc:postgresql://YOUR-DB-CONNECTION-STRING"
+        val connection = DriverManager.getConnection(jdbcUrl, "USER_NAME", "PASSWORD");
         return connection;
 }
